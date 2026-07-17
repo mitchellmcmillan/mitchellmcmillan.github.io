@@ -1,18 +1,80 @@
-<!DOCTYPE HTML>
-<html>
-  <head></head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mitchell McMillan</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --paper: #f4f1e8;
+        --ink: #242424;
+        --link: #0000ee;
+        --visited: #551a8b;
+        --border: #242424;
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font: 16px/1.5 Georgia, "Times New Roman", serif;
+      }
+
+      main {
+        width: min(100% - 2rem, 42rem);
+        margin: 3rem auto;
+        padding: 1.5rem;
+        border: 2px solid var(--border);
+        box-shadow: 7px 7px 0 #c9c3b4;
+        background: #fffdf6;
+      }
+
+      header {
+        margin-bottom: 1.5rem;
+        border-bottom: 1px solid var(--border);
+      }
+
+      h1, h2 { font-family: "Courier New", monospace; }
+      h1 { margin: 0 0 .25rem; font-size: 1.75rem; }
+      h2 { margin: 1.5rem 0 .5rem; font-size: 1rem; }
+      ul { margin: 0; padding-left: 1.5rem; }
+      li { margin: .35rem 0; }
+      a { color: var(--link); }
+      a:visited { color: var(--visited); }
+      a:focus-visible { outline: 2px dotted currentColor; outline-offset: 3px; }
+
+      @media (max-width: 480px) {
+        main { margin: 1rem auto; padding: 1rem; }
+      }
+    </style>
+  </head>
   <body>
-    <ul>
-      <li><a href="https://mitchellmcmillan.com/room-pricer">n-good bidrectional Dutch auction for sharehouse rooms</a></li>
-      <li><a href="https://mitchellmcmillan.com/income-tax-plotter">Income tax visualiser</a></li>
-      <li><a href="https://nas.mitchellmcmillan.com/london-map/#mode=changes&layer=1990_2025&year_start=1990&year_end=2025&opacity=0.65&metric=value&transform=logarithmic&power=2.00&lng=-0.12074&lat=51.48071&zoom=10.08">London connectivity index</a></li>
-      <li><a href="https://github.com/mitchellmcmillan">Github</a></li>
-    </ul>
-    Other links
-    <ul>
-      <li><a href="https://www.linkedin.com/in/mitchelldmcmillan/">LinkedIn</a></li>
-      <li><a href="https://nas.mitchellmcmillan.com/files/Honours_Thesis.pdf">Undergraduate (Honours) thesis</a></li>
-      <li><a href="https://nas.mitchellmcmillan.com/files/MPhil_Thesis.pdf">Master's (MPhil) thesis</a></li>
-    </ul>
+    <main>
+      <header>
+        <h1>Mitchell McMillan</h1>
+      </header>
+
+      <section aria-labelledby="projects">
+        <h2 id="projects">Projects</h2>
+        <ul>
+          <li><a href="https://mitchellmcmillan.com/room-pricer">n-good bidirectional Dutch auction for sharehouse rooms</a></li>
+          <li><a href="https://mitchellmcmillan.com/income-tax-plotter">Cross-country income tax visualiser</a></li>
+          <li><a href="https://nas.mitchellmcmillan.com/london-map/#mode=changes&amp;layer=1990_2025&amp;year_start=1990&amp;year_end=2025&amp;opacity=0.65&amp;metric=value&amp;transform=logarithmic&amp;power=2.00&amp;lng=-0.12074&amp;lat=51.48071&amp;zoom=10.08">London public transport connectivity index</a></li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="other-links">
+        <h2 id="other-links">Other links</h2>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/mitchelldmcmillan/">LinkedIn</a></li>
+          <li><a href="https://github.com/mitchellmcmillan">GitHub</a></li>
+          <li><a href="https://nas.mitchellmcmillan.com/files/Honours_Thesis.pdf">Undergraduate (Honours) thesis</a></li>
+          <li><a href="https://nas.mitchellmcmillan.com/files/MPhil_Thesis.pdf">Master's (MPhil) thesis</a></li>
+        </ul>
+      </section>
+    </main>
   </body>
 </html>
